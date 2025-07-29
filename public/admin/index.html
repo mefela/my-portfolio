@@ -3,11 +3,17 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Admin Panel</title>
+    <title>Netlify CMS Admin</title>
     <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
 </head>
 
 <body>
+    <script>
+        // Netlify CMS burada id="nc-root" elementi arar, eklenmezse hata verir
+        const root = document.createElement("div");
+        root.id = "nc-root";
+        document.body.appendChild(root);
+    </script>
 </body>
 
 </html>
